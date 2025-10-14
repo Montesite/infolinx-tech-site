@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <section 
       id="inicio" 
-      className="relative min-h-screen flex items-center overflow-hidden pt-16 sm:pt-20 md:pt-24"
+      className="relative min-h-screen flex items-center overflow-hidden pt-32 sm:pt-28 md:pt-32 lg:pt-44"
       style={{
         backgroundImage: 'url(/lovable-uploads/5320e2f5-bd0e-4128-8518-5ed10f953f29.png)',
         backgroundSize: 'cover',
