@@ -2,7 +2,7 @@
 const WhatsAppButton = () => {
   return (
     <a
-      href="https://wa.me/5531982980064?text=Olá! Gostaria de conhecer mais sobre os serviços da Infolinx."
+      href="https://wa.me/553192980064?text=Olá! Gostaria de conhecer mais sobre os serviços da Infolinx."
       className="fixed bottom-6 right-6 z-40 bg-transparent hover:scale-110 p-0 rounded-full shadow-lg transition-all duration-300 group"
       target="_blank"
       rel="noopener noreferrer"

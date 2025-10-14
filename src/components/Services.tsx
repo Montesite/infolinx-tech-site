@@ -40,7 +40,7 @@ const Services = () => {
 
   const requestQuote = (serviceTitle: string) => {
     const message = `Olá! Gostaria de solicitar orçamento para o serviço: ${serviceTitle}`;
-    window.open(`https://wa.me/5531982980064?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/553192980064?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (
@@ -95,7 +95,7 @@ const Services = () => {
               Nossa equipe está pronta para desenvolver a solução perfeita para sua empresa.
             </p>
             <a 
-              href="https://wa.me/5531982980064?text=Olá! Gostaria de uma consultoria personalizada sobre os serviços da Infolinx."
+              href="https://wa.me/553192980064?text=Olá! Gostaria de uma consultoria personalizada sobre os serviços da Infolinx."
               className="inline-flex items-center justify-center bg-primary text-primary-foreground font-semibold px-6 sm:px-8 py-3 rounded-lg hover:bg-primary/90 focus:bg-primary/90 focus:ring-2 focus:ring-primary/20 transition-all duration-300 text-sm sm:text-base"
               target="_blank"
               rel="noopener noreferrer"

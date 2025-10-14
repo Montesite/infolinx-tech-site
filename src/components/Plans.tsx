@@ -127,7 +127,7 @@ const Plans = () => {
   };
   const handleSendWhatsApp = () => {
     const message = generateWhatsAppMessage();
-    window.open(`https://wa.me/5531982980064?text=${message}`, '_blank');
+    window.open(`https://wa.me/553192980064?text=${message}`, '_blank');
   };
   return (
     <section id="planos" className="py-12 sm:py-16 lg:py-20 bg-transparent">
@@ -229,7 +229,7 @@ const Plans = () => {
                       Adicionar ao Carrinho
                     </Button>
                     
-                    <a href={`https://wa.me/5531982980064?text=Olá! Gostaria de contratar o serviço de ${service.name} da Infolinx.`} className="w-full inline-flex items-center justify-center bg-secondary text-secondary-foreground font-medium px-4 py-2 rounded-lg hover:bg-secondary/80 transition-all duration-300 text-sm" target="_blank" rel="noopener noreferrer">
+                    <a href={`https://wa.me/553192980064?text=Olá! Gostaria de contratar o serviço de ${service.name} da Infolinx.`} className="w-full inline-flex items-center justify-center bg-secondary text-secondary-foreground font-medium px-4 py-2 rounded-lg hover:bg-secondary/80 transition-all duration-300 text-sm" target="_blank" rel="noopener noreferrer">
                       Contratar Individual
                     </a>
                   </div>
@@ -268,7 +268,7 @@ const Plans = () => {
               Entre em contato conosco para receber uma proposta customizada 
               para as necessidades específicas da sua empresa.
             </p>
-            <a href="https://wa.me/5531982980064?text=Olá! Gostaria de receber um orçamento personalizado dos serviços da Infolinx." className="inline-flex items-center justify-center bg-primary text-primary-foreground font-semibold px-8 py-3 rounded-lg hover:bg-primary/90 focus:bg-primary/90 focus:ring-2 focus:ring-primary/20 transition-all duration-300" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/553192980064?text=Olá! Gostaria de receber um orçamento personalizado dos serviços da Infolinx." className="inline-flex items-center justify-center bg-primary text-primary-foreground font-semibold px-8 py-3 rounded-lg hover:bg-primary/90 focus:bg-primary/90 focus:ring-2 focus:ring-primary/20 transition-all duration-300" target="_blank" rel="noopener noreferrer">
               Solicitar Orçamento
             </a>
           </div>

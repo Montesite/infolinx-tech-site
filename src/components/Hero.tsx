@@ -131,7 +131,7 @@ const Hero = () => {
                 
                 <div className="pt-4">
                   <a 
-                    href="https://wa.me/5531982980064?text=Olá! Gostaria de conhecer mais sobre os serviços da Infolinx."
+                    href="https://wa.me/553192980064?text=Olá! Gostaria de conhecer mais sobre os serviços da Infolinx."
                     className="btn-hero-primary w-full flex items-center justify-center gap-2"
                     target="_blank"
                     rel="noopener noreferrer"

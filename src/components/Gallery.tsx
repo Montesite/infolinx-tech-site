@@ -202,7 +202,7 @@ const Gallery = () => {
               a alcançar a excelência tecnológica.
             </p>
             <a 
-              href="https://wa.me/5531982980064?text=Olá! Gostaria de saber mais sobre os serviços da Infolinx."
+              href="https://wa.me/553192980064?text=Olá! Gostaria de saber mais sobre os serviços da Infolinx."
               className="inline-flex items-center justify-center bg-primary text-primary-foreground font-semibold px-6 sm:px-8 py-3 rounded-lg hover:bg-primary-600 focus:bg-primary-600 focus:ring-2 focus:ring-primary/20 transition-all duration-300 text-sm sm:text-base"
               target="_blank"
               rel="noopener noreferrer"

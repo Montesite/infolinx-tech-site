@@ -28,8 +28,8 @@ const Contact = () => {
                       <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-1" />
                       <div>
                         <h4 className="font-semibold text-foreground mb-1 text-sm sm:text-base">Telefone</h4>
-                        <a href="tel:+5531982980064" className="text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base">
-                          (31) 98298-0064
+                        <a href="tel:+553192980064" className="text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base">
+                          (31) 92980064
                         </a>
                       </div>
                     </div>
@@ -84,7 +84,7 @@ const Contact = () => {
                 </p>
                 
                 <div className="space-y-3 sm:space-y-4">
-                  <a href="https://wa.me/5531982980064?text=Olá! Gostaria de conhecer mais sobre os serviços da Infolinx." className="inline-flex items-center justify-center w-full bg-green-500 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-green-600 focus:bg-green-600 focus:ring-2 focus:ring-green-500/20 transition-all duration-300 group text-sm sm:text-base" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/553192980064?text=Olá! Gostaria de conhecer mais sobre os serviços da Infolinx." className="inline-flex items-center justify-center w-full bg-green-500 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-green-600 focus:bg-green-600 focus:ring-2 focus:ring-green-500/20 transition-all duration-300 group text-sm sm:text-base" target="_blank" rel="noopener noreferrer">
                     <img src="/lovable-uploads/d92d3c24-3b57-4af8-9577-4fa6a5f495d2.png" alt="WhatsApp" className="w-4 h-4 sm:w-5 sm:h-5 mr-2 group-hover:scale-110 transition-transform" />
                     Falar no WhatsApp
                   </a>
