@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- Primary Meta Tags -->
     <title>Infolinx - Aperfeiçoar com Tecnologia | Serviços de TI Corporativo</title>
     <meta name="title" content="Infolinx - Aperfeiçoar com Tecnologia | Serviços de TI Corporativo" />
@@ -13,31 +12,34 @@
     <meta name="author" content="Infolinx Serviços e Suprimentos LTDA" />
     <meta name="robots" content="index, follow" />
     <meta name="language" content="pt-BR" />
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://infolinx.com.br/" />
     <meta property="og:title" content="Infolinx - Aperfeiçoar com Tecnologia | Serviços de TI Corporativo" />
     <meta property="og:description" content="Somos especialistas em suporte, manutenção e gerenciamento de ativos de tecnologia. Parceiros certificados Microsoft, Lenovo, Intelbras. Aperfeiçoe sua empresa com tecnologia." />
-    <meta property="og:image" content="/lovable-uploads/dd8a0701-ac38-461c-a2e2-e71a00f3ee46.png" />
+    <meta property="og:image" content="https://infolinx.com.br/lovable-uploads/dd8a0701-ac38-461c-a2e2-e71a00f3ee46.png" />
     <meta property="og:site_name" content="Infolinx" />
     <meta property="og:locale" content="pt_BR" />
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://infolinx.com.br/" />
     <meta property="twitter:title" content="Infolinx - Aperfeiçoar com Tecnologia | Serviços de TI Corporativo" />
     <meta property="twitter:description" content="Somos especialistas em suporte, manutenção e gerenciamento de ativos de tecnologia. Parceiros certificados Microsoft, Lenovo, Intelbras. Aperfeiçoe sua empresa com tecnologia." />
-    <meta property="twitter:image" content="/lovable-uploads/dd8a0701-ac38-461c-a2e2-e71a00f3ee46.png" />
-    
+    <meta property="twitter:image" content="https://infolinx.com.br/lovable-uploads/dd8a0701-ac38-461c-a2e2-e71a00f3ee46.png" />
+
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/lovable-uploads/dd8a0701-ac38-461c-a2e2-e71a00f3ee46.png" />
-    <link rel="apple-touch-icon" href="/lovable-uploads/dd8a0701-ac38-461c-a2e2-e71a00f3ee46.png" />
-    
-    <!-- Preconnect for performance -->
+    <link rel="icon" type="image/png" href="lovable-uploads/dd8a0701-ac38-461c-a2e2-e71a00f3ee46.png" />
+    <link rel="apple-touch-icon" href="lovable-uploads/dd8a0701-ac38-461c-a2e2-e71a00f3ee46.png" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -46,10 +48,10 @@
       "name": "Infolinx Serviços e Suprimentos LTDA",
       "alternateName": "Infolinx",
       "url": "https://infolinx.com.br",
-      "logo": "/lovable-uploads/dd8a0701-ac38-461c-a2e2-e71a00f3ee46.png",
+      "logo": "https://infolinx.com.br/lovable-uploads/dd8a0701-ac38-461c-a2e2-e71a00f3ee46.png",
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+55-31-98298-0064",
+        "telephone": "+55-31-9298-0064",
         "contactType": "customer service",
         "availableLanguage": "Portuguese"
       },
@@ -66,12 +68,1283 @@
   </head>
 
   <body>
-    <div id="root"></div>
-    
+    <div class="page">
+      <!-- Header -->
+      <header class="header">
+        <nav class="container header-nav">
+          <div class="header-row">
+            <div class="header-logo">
+              <img src="lovable-uploads/dd8a0701-ac38-461c-a2e2-e71a00f3ee46.png" alt="Infolinx Logo - Aperfeiçoar com Tecnologia" />
+            </div>
+
+            <div class="header-links">
+              <a href="#inicio" class="nav-link" data-scroll>Início</a>
+              <a href="#sobre" class="nav-link" data-scroll>Sobre</a>
+              <a href="#planos" class="nav-link" data-scroll>Serviços</a>
+              <a href="#contato" class="nav-link" data-scroll>Contato</a>
+            </div>
+
+            <div class="header-ctas">
+              <a href="https://infolinx.tomticket.com" title="Acessar Help Desk" target="_blank" rel="noopener noreferrer" class="btn-client">Sou Cliente</a>
+              <a href="#contato" class="btn btn-primary header-cta-main" data-scroll>Falar Conosco</a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+              <span class="menu-icon-open"><svg class="lucide lucide-menu menu-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12" /> <line x1="4" x2="20" y1="6" y2="6" /> <line x1="4" x2="20" y1="18" y2="18" /></svg></span>
+              <span class="menu-icon-close"><svg class="lucide lucide-x menu-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /> <path d="m6 6 12 12" /></svg></span>
+            </button>
+          </div>
+
+          <div class="mobile-menu" id="mobileMenu" hidden>
+            <div class="mobile-menu-inner">
+              <a href="#inicio" class="nav-link" data-scroll>Início</a>
+              <a href="#sobre" class="nav-link" data-scroll>Sobre</a>
+              <a href="#planos" class="nav-link" data-scroll>Serviços</a>
+              <a href="#contato" class="nav-link" data-scroll>Contato</a>
+              <a href="https://infolinx.tomticket.com" title="Acessar Help Desk" target="_blank" rel="noopener noreferrer" class="btn-client mobile-client">Sou Cliente</a>
+              <a href="#contato" class="btn btn-primary mobile-cta" data-scroll>Falar Conosco</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <!-- Hero -->
+        <section id="inicio" class="hero">
+          <div class="hero-overlay"></div>
+
+          <div class="hero-pattern">
+            <div class="hero-square hero-square-1"></div>
+            <div class="hero-square hero-square-2"></div>
+            <div class="hero-square hero-square-3"></div>
+            <div class="hero-square hero-square-4"></div>
+          </div>
+
+          <div class="container hero-container">
+            <div class="hero-grid">
+              <div class="hero-content animate-fade-in">
+                <div class="hero-text">
+                  <h1 class="hero-title">
+                    <span class="hero-title-line">Aperfeiçoar</span>
+                    <span class="hero-title-line hero-title-soft">com</span>
+                    <span class="hero-title-line hero-title-gradient">Tecnologia</span>
+                  </h1>
+                  <p class="hero-lead">
+                    Somos especialistas em suporte, manutenção e gerenciamento de ativos de tecnologia para empresas.
+                  </p>
+                </div>
+
+                <div class="hero-ctas">
+                  <a href="#planos" class="btn-hero-primary group" data-scroll>
+                    Conhecer Planos
+                    <svg class="lucide lucide-arrow-right hero-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg>
+                  </a>
+                  <a href="#sobre" class="btn-hero-secondary" data-scroll>
+                    <svg class="lucide lucide-play" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3" /></svg>
+                    Saiba Mais
+                  </a>
+                </div>
+
+                <div class="hero-stats">
+                  <div class="hero-stat">
+                    <div class="hero-stat-icon"><svg class="lucide lucide-users hero-stat-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg></div>
+                    <div class="hero-stat-value">B2B</div>
+                    <div class="hero-stat-label">Foco Corporativo</div>
+                  </div>
+                  <div class="hero-stat">
+                    <div class="hero-stat-icon"><svg class="lucide lucide-award hero-stat-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" /> <circle cx="12" cy="8" r="6" /></svg></div>
+                    <div class="hero-stat-value">Qualidade</div>
+                    <div class="hero-stat-label">Excelência</div>
+                  </div>
+                  <div class="hero-stat hero-stat-wide">
+                    <div class="hero-stat-icon"><svg class="lucide lucide-headphones hero-stat-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3" /></svg></div>
+                    <div class="hero-stat-value">24/7</div>
+                    <div class="hero-stat-label">Suporte Disponível</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-visual animate-slide-in" style="animation-delay: 0.3s">
+                <div class="hero-card">
+                  <div class="hero-card-inner">
+                    <h3 class="hero-card-title">Nossos Diferenciais</h3>
+
+                    <div class="hero-card-list">
+                      <div class="hero-card-item">
+                        <svg class="lucide lucide-circle-check-big hero-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335" /> <path d="m9 11 3 3L22 4" /></svg>
+                        <div class="hero-card-item-text">
+                          <div class="hero-card-item-title">Parque Tecnológico Completo</div>
+                          <div class="hero-card-item-desc">Gerenciamento total dos seus ativos de TI</div>
+                        </div>
+                      </div>
+
+                      <div class="hero-card-item">
+                        <svg class="lucide lucide-circle-check-big hero-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335" /> <path d="m9 11 3 3L22 4" /></svg>
+                        <div class="hero-card-item-text">
+                          <div class="hero-card-item-title">Suporte Dedicado</div>
+                          <div class="hero-card-item-desc">Atendimento especializado para sua empresa</div>
+                        </div>
+                      </div>
+
+                      <div class="hero-card-item">
+                        <svg class="lucide lucide-circle-check-big hero-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335" /> <path d="m9 11 3 3L22 4" /></svg>
+                        <div class="hero-card-item-text">
+                          <div class="hero-card-item-title">Entrega &amp; Segurança</div>
+                          <div class="hero-card-item-desc">Delivery especializado para equipamentos</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="hero-card-cta">
+                      <a href="https://wa.me/553192980064?text=Olá! Gostaria de conhecer mais sobre os serviços da Infolinx." class="btn-hero-primary btn-block" target="_blank" rel="noopener noreferrer">
+                        <img src="lovable-uploads/d92d3c24-3b57-4af8-9577-4fa6a5f495d2.png" alt="WhatsApp" class="icon-5" />
+                        Falar no WhatsApp
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Gallery -->
+        <section id="galeria" class="section section-muted">
+          <div class="container container-r">
+            <div class="section-header animate-fade-in">
+              <h2 class="section-title title-md">Nossa Galeria</h2>
+              <p class="section-subtitle">
+                Conheça mais sobre a Infolinx através de nossa galeria visual com informações
+                sobre nossos serviços, produtos e história.
+              </p>
+            </div>
+
+            <div class="gallery-wrap">
+              <div class="carousel" id="galleryCarousel">
+                <div class="carousel-viewport">
+                  <div class="carousel-track gallery-track">
+                    <div class="carousel-item gallery-item" data-index="0">
+                      <div class="card gallery-card animate-fade-in">
+                        <div class="gallery-media">
+                          <img src="lovable-uploads/76f0d139-e660-492e-86fa-5cca9bb9a7e1.png" alt="Infolinx Technology Background" />
+                          <div class="gallery-hover"><div class="gallery-hover-text"><h3>Tecnologia Avançada</h3></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item gallery-item" data-index="1">
+                      <div class="card gallery-card animate-fade-in">
+                        <div class="gallery-media">
+                          <img src="lovable-uploads/9c85dabf-56ee-485c-aea2-fbdbe9d50769.png" alt="Quem Somos - Infolinx" />
+                          <div class="gallery-hover"><div class="gallery-hover-text"><h3>Quem Somos</h3></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item gallery-item" data-index="2">
+                      <div class="card gallery-card animate-fade-in">
+                        <div class="gallery-media">
+                          <img src="lovable-uploads/9a55e500-e0ef-43dd-a959-5c2abd90b69b.png" alt="Nossos Serviços" />
+                          <div class="gallery-hover"><div class="gallery-hover-text"><h3>Nossos Serviços</h3></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item gallery-item" data-index="3">
+                      <div class="card gallery-card animate-fade-in">
+                        <div class="gallery-media">
+                          <img src="lovable-uploads/01cf467b-86b3-4f50-a424-d4d5be029b05.png" alt="Produtos - Parcerias" />
+                          <div class="gallery-hover"><div class="gallery-hover-text"><h3>Nossos Produtos</h3></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item gallery-item" data-index="4">
+                      <div class="card gallery-card animate-fade-in">
+                        <div class="gallery-media">
+                          <img src="lovable-uploads/f113ac0a-917b-4aec-9302-6eb474e24609.png" alt="Clientes Infolinx" />
+                          <div class="gallery-hover"><div class="gallery-hover-text"><h3>Nossos Clientes</h3></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item gallery-item" data-index="5">
+                      <div class="card gallery-card animate-fade-in">
+                        <div class="gallery-media">
+                          <img src="lovable-uploads/5981286e-2178-4067-87b2-a5a71aefb3ac.png" alt="Planos de Serviços" />
+                          <div class="gallery-hover"><div class="gallery-hover-text"><h3>Planos de Serviços</h3></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item gallery-item" data-index="6">
+                      <div class="card gallery-card animate-fade-in">
+                        <div class="gallery-media">
+                          <img src="lovable-uploads/1f421959-cd73-4d0a-80cd-f1ddd3594b25.png" alt="Missão Infolinx" />
+                          <div class="gallery-hover"><div class="gallery-hover-text"><h3>Nossa Missão</h3></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item gallery-item" data-index="7">
+                      <div class="card gallery-card animate-fade-in">
+                        <div class="gallery-media">
+                          <img src="lovable-uploads/49303d38-7f64-4e77-9fe8-1da14d96720d.png" alt="Valores Infolinx" />
+                          <div class="gallery-hover"><div class="gallery-hover-text"><h3>Nossos Valores</h3></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item gallery-item" data-index="8">
+                      <div class="card gallery-card animate-fade-in">
+                        <div class="gallery-media">
+                          <img src="lovable-uploads/170d646c-eac5-4771-9105-a371074acbda.png" alt="Visão Infolinx" />
+                          <div class="gallery-hover"><div class="gallery-hover-text"><h3>Nossa Visão</h3></div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item gallery-item" data-index="9">
+                      <div class="card gallery-card animate-fade-in">
+                        <div class="gallery-media">
+                          <img src="lovable-uploads/5839bc74-5ac9-4b74-9a8e-d337ffe573d7.png" alt="A Infolinx" />
+                          <div class="gallery-hover"><div class="gallery-hover-text"><h3>Sobre a Infolinx</h3></div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-btn carousel-prev" type="button" data-carousel-prev>
+                  <svg class="lucide lucide-arrow-left" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7" /> <path d="M19 12H5" /></svg>
+                  <span class="sr-only">Previous slide</span>
+                </button>
+                <button class="carousel-btn carousel-next" type="button" data-carousel-next>
+                  <svg class="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg>
+                  <span class="sr-only">Next slide</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="cta-wrap cta-wrap-r animate-fade-in" style="animation-delay: 1.3s">
+              <div class="cta-box cta-box-r">
+                <h3 class="cta-title-r">Quer saber mais sobre nossos serviços?</h3>
+                <p class="cta-text-r">
+                  Entre em contato conosco e descubra como podemos ajudar sua empresa
+                  a alcançar a excelência tecnológica.
+                </p>
+                <a href="https://wa.me/553192980064?text=Olá! Gostaria de saber mais sobre os serviços da Infolinx." class="btn-cta btn-cta-r btn-cta-600" target="_blank" rel="noopener noreferrer">
+                  <img src="lovable-uploads/d92d3c24-3b57-4af8-9577-4fa6a5f495d2.png" alt="WhatsApp" class="cta-wa-icon" />
+                  Falar Conosco
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About -->
+        <section id="sobre" class="section section-muted">
+          <div class="container container-r">
+            <div class="section-header animate-fade-in">
+              <h2 class="section-title title-lg">Sobre a Infolinx</h2>
+              <p class="section-subtitle">
+                Somos uma empresa de prestação de serviços e suprimentos em tecnologia,
+                especializada no gerenciamento completo do seu parque tecnológico.
+              </p>
+            </div>
+
+            <div class="about-grid">
+              <div class="about-content animate-slide-in">
+                <div>
+                  <h3 class="about-subtitle">Nossa Filosofia</h3>
+                  <p class="about-quote">
+                    "Não reinventamos a roda, mas escolhemos, testamos e certificamos as melhores opções
+                    de roda para o cenário do nosso cliente."
+                  </p>
+                  <p class="about-text">
+                    Trabalhamos próximo aos clientes para melhorar processos internos através da tecnologia
+                    e aumentar seus resultados, sempre preservando a honestidade, transparência e boa comunicação.
+                  </p>
+                </div>
+
+                <div class="about-highlights">
+                  <div class="about-highlight">
+                    <svg class="lucide lucide-users about-highlight-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
+                    <div class="about-highlight-title">Foco B2B</div>
+                    <div class="about-highlight-sub">Corporativo</div>
+                  </div>
+                  <div class="about-highlight">
+                    <svg class="lucide lucide-cpu about-highlight-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="16" height="16" x="4" y="4" rx="2" /> <rect width="6" height="6" x="9" y="9" rx="1" /> <path d="M15 2v2" /> <path d="M15 20v2" /> <path d="M2 15h2" /> <path d="M2 9h2" /> <path d="M20 15h2" /> <path d="M20 9h2" /> <path d="M9 2v2" /> <path d="M9 20v2" /></svg>
+                    <div class="about-highlight-title">PCs GAMER</div>
+                    <div class="about-highlight-sub">Personalização</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="about-cards animate-fade-in" style="animation-delay: 0.3s">
+                <div class="card card-service">
+                  <div class="card-content-r">
+                    <div class="icon-row">
+                      <svg class="lucide lucide-target icon-row-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <circle cx="12" cy="12" r="6" /> <circle cx="12" cy="12" r="2" /></svg>
+                      <div>
+                        <h4 class="about-card-title">Nossa Missão</h4>
+                        <p class="about-card-text">
+                          Trabalhar próximo aos clientes para melhorar processos internos através da
+                          tecnologia e aumentar seus resultados, sempre preservando a honestidade,
+                          transparência e boa comunicação, para juntos alcançarmos a excelência e
+                          tornarmos big players no mercado.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card card-service">
+                  <div class="card-content-r">
+                    <div class="icon-row">
+                      <svg class="lucide lucide-eye icon-row-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /> <circle cx="12" cy="12" r="3" /></svg>
+                      <div>
+                        <h4 class="about-card-title">Nossa Visão</h4>
+                        <p class="about-card-text">
+                          Ser referência em soluções tecnológicas, combinando o pensamento corporativo
+                          com inovação e modernidade, conectando empresas ao futuro através da tecnologia.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="lenovo animate-fade-in" style="animation-delay: 0.6s">
+              <div class="card card-service lenovo-card">
+                <div class="lenovo-content">
+                  <div class="lenovo-head">
+                    <h3 class="lenovo-title">Especialização Lenovo</h3>
+                    <div class="lenovo-lines">
+                      <div class="lenovo-line">
+                        <svg class="lucide lucide-shield lenovo-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /></svg>
+                        <span>ThinkPad</span>
+                      </div>
+                      <div class="lenovo-line">
+                        <svg class="lucide lucide-cpu lenovo-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="16" height="16" x="4" y="4" rx="2" /> <rect width="6" height="6" x="9" y="9" rx="1" /> <path d="M15 2v2" /> <path d="M15 20v2" /> <path d="M2 15h2" /> <path d="M2 9h2" /> <path d="M20 15h2" /> <path d="M20 9h2" /> <path d="M9 2v2" /> <path d="M9 20v2" /></svg>
+                        <span>ThinkStation</span>
+                      </div>
+                      <div class="lenovo-line">
+                        <svg class="lucide lucide-award lenovo-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" /> <circle cx="12" cy="8" r="6" /></svg>
+                        <span>ThinkSystem</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="lenovo-body">
+                    <p>
+                      Nosso trabalho é realmente diferencial com este fabricante. Temos a condição de
+                      <span class="strong"> vender, integrar e fazer manutenção</span> de
+                      todos os itens relacionados.
+                    </p>
+                    <p>
+                      Somos capacitados para <span class="strong">dimensionar e identificar</span> o
+                      equipamento que atende perfeitamente a demanda do cliente.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Services -->
+        <section id="servicos" class="section">
+          <div class="container container-r">
+            <div class="section-header animate-fade-in">
+              <h2 class="section-title title-lg">Nossos Serviços</h2>
+              <p class="section-subtitle">
+                Oferecemos soluções completas em tecnologia para empresas de todos os tamanhos,
+                com foco na excelência e resultados.
+              </p>
+            </div>
+
+            <div class="services-grid">
+              <div class="card card-service service-card animate-fade-in" style="animation-delay: 0s">
+                <div class="service-content">
+                  <div class="service-icon-wrap"><svg class="lucide lucide-headphones service-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3" /></svg></div>
+                  <h3 class="service-title">Suporte Técnico</h3>
+                  <p class="service-desc">Suporte especializado para desktop, notebook, servidores e toda sua infraestrutura de TI.</p>
+                  <button type="button" class="btn btn-primary btn-sm service-btn" data-quote="Suporte Técnico">Solicitar Orçamento</button>
+                </div>
+              </div>
+              <div class="card card-service service-card animate-fade-in" style="animation-delay: 0.1s">
+                <div class="service-content">
+                  <div class="service-icon-wrap"><svg class="lucide lucide-server service-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="8" x="2" y="2" rx="2" ry="2" /> <rect width="20" height="8" x="2" y="14" rx="2" ry="2" /> <line x1="6" x2="6.01" y1="6" y2="6" /> <line x1="6" x2="6.01" y1="18" y2="18" /></svg></div>
+                  <h3 class="service-title">Gerenciamento de Ativos</h3>
+                  <p class="service-desc">Gestão completa do seu parque tecnológico com monitoramento 24/7 e manutenção preventiva.</p>
+                  <button type="button" class="btn btn-primary btn-sm service-btn" data-quote="Gerenciamento de Ativos">Solicitar Orçamento</button>
+                </div>
+              </div>
+              <div class="card card-service service-card animate-fade-in" style="animation-delay: 0.2s">
+                <div class="service-content">
+                  <div class="service-icon-wrap"><svg class="lucide lucide-shield service-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /></svg></div>
+                  <h3 class="service-title">Licenças de Software</h3>
+                  <p class="service-desc">Venda e gerenciamento de licenças Microsoft, AutoDesk, Kaspersky, Adobe e outros.</p>
+                  <button type="button" class="btn btn-primary btn-sm service-btn" data-quote="Licenças de Software">Solicitar Orçamento</button>
+                </div>
+              </div>
+              <div class="card card-service service-card animate-fade-in" style="animation-delay: 0.3s">
+                <div class="service-content">
+                  <div class="service-icon-wrap"><svg class="lucide lucide-laptop service-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16" /></svg></div>
+                  <h3 class="service-title">Equipamentos Corporativos</h3>
+                  <p class="service-desc">Venda de desktops, notebooks, servidores e toda linha de equipamentos empresariais.</p>
+                  <button type="button" class="btn btn-primary btn-sm service-btn" data-quote="Equipamentos Corporativos">Solicitar Orçamento</button>
+                </div>
+              </div>
+              <div class="card card-service service-card animate-fade-in" style="animation-delay: 0.4s">
+                <div class="service-content">
+                  <div class="service-icon-wrap"><svg class="lucide lucide-network service-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="16" y="16" width="6" height="6" rx="1" /> <rect x="2" y="16" width="6" height="6" rx="1" /> <rect x="9" y="2" width="6" height="6" rx="1" /> <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3" /> <path d="M12 12V8" /></svg></div>
+                  <h3 class="service-title">Infraestrutura de Rede</h3>
+                  <p class="service-desc">Switches, roteadores, firewall, access points e projetos de rede de dados personalizados.</p>
+                  <button type="button" class="btn btn-primary btn-sm service-btn" data-quote="Infraestrutura de Rede">Solicitar Orçamento</button>
+                </div>
+              </div>
+              <div class="card card-service service-card animate-fade-in" style="animation-delay: 0.5s">
+                <div class="service-content">
+                  <div class="service-icon-wrap"><svg class="lucide lucide-gamepad-2 service-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" x2="10" y1="11" y2="11" /> <line x1="8" x2="8" y1="9" y2="13" /> <line x1="15" x2="15.01" y1="12" y2="12" /> <line x1="18" x2="18.01" y1="10" y2="10" /> <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" /></svg></div>
+                  <h3 class="service-title">PCs GAMER</h3>
+                  <p class="service-desc">Montagem e personalização de PCs GAMER com componentes de alta performance.</p>
+                  <button type="button" class="btn btn-primary btn-sm service-btn" data-quote="PCs GAMER">Solicitar Orçamento</button>
+                </div>
+              </div>
+              <div class="card card-service service-card animate-fade-in" style="animation-delay: 0.6s">
+                <div class="service-content">
+                  <div class="service-icon-wrap"><svg class="lucide lucide-truck service-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" /> <path d="M15 18H9" /> <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" /> <circle cx="17" cy="18" r="2" /> <circle cx="7" cy="18" r="2" /></svg></div>
+                  <h3 class="service-title">Delivery Especializado</h3>
+                  <p class="service-desc">Serviço de entrega dedicado para segurança e transporte dos seus equipamentos.</p>
+                  <button type="button" class="btn btn-primary btn-sm service-btn" data-quote="Delivery Especializado">Solicitar Orçamento</button>
+                </div>
+              </div>
+              <div class="card card-service service-card animate-fade-in" style="animation-delay: 0.7s">
+                <div class="service-content">
+                  <div class="service-icon-wrap"><svg class="lucide lucide-monitor service-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2" /> <line x1="8" x2="16" y1="21" y2="21" /> <line x1="12" x2="12" y1="17" y2="21" /></svg></div>
+                  <h3 class="service-title">Controle de Acesso</h3>
+                  <p class="service-desc">Projetos personalizados de controle de acesso para condomínios e empresas.</p>
+                  <button type="button" class="btn btn-primary btn-sm service-btn" data-quote="Controle de Acesso">Solicitar Orçamento</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cta-wrap-plain animate-fade-in" style="animation-delay: 0.8s">
+              <div class="cta-box cta-box-r">
+                <h3 class="cta-title-r">Precisa de uma solução personalizada?</h3>
+                <p class="cta-text-r">
+                  Nossa equipe está pronta para desenvolver a solução perfeita para sua empresa.
+                </p>
+                <a href="https://wa.me/553192980064?text=Olá! Gostaria de uma consultoria personalizada sobre os serviços da Infolinx." class="btn-cta btn-cta-r" target="_blank" rel="noopener noreferrer">
+                  <img src="lovable-uploads/d92d3c24-3b57-4af8-9577-4fa6a5f495d2.png" alt="WhatsApp" class="cta-wa-icon" />
+                  Falar Conosco
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Plans -->
+        <section id="planos" class="section">
+          <div class="container container-r">
+            <div class="cart-float" id="cartFloat" hidden>
+              <button class="cart-float-btn" type="button" id="cartOpen" aria-label="Abrir carrinho">
+                <svg class="lucide lucide-shopping-cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1" /> <circle cx="19" cy="21" r="1" /> <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>
+                <span class="cart-badge" id="cartBadge">0</span>
+              </button>
+            </div>
+
+            <div class="section-header animate-fade-in">
+              <h2 class="section-title title-md">Nossos Serviços</h2>
+              <p class="section-subtitle">
+                Oferecemos suporte, manutenção e gerenciamento para todos os seus equipamentos
+                e sistemas de tecnologia com preços transparentes.
+              </p>
+              <div class="plans-note">
+                <p class="plans-note-main">
+                  <strong>Plano BASIC:</strong> Quantitativo mínimo: 5 dispositivos | Contratos anuais
+                </p>
+                <p class="plans-note-sub">
+                  Também possuímos planos <strong>Standard</strong> e <strong>Premium</strong> com condições diferenciadas.
+                  <br />
+                  <span class="underline">Entre em contato para saber mais sobre os outros planos.</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="plans-grid" id="plansGrid">
+              <div class="card plan-card animate-fade-in" style="animation-delay: 0s" data-id="1" data-name="Desktop" data-price="R$ 55,00">
+                <div class="plan-header">
+                  <div class="plan-icon-wrap"><svg class="lucide lucide-monitor plan-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2" /> <line x1="8" x2="16" y1="21" y2="21" /> <line x1="12" x2="12" y1="17" y2="21" /></svg></div>
+                  <h3 class="plan-name">Desktop</h3>
+                </div>
+                <div class="plan-content">
+                  <div>
+                    <span class="plan-price">R$ 55,00</span>
+                    <span class="plan-period">por mês</span>
+                  </div>
+                  <div class="plan-check">
+                    <svg class="lucide lucide-check plan-check-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+                    <span>Suporte completo incluído</span>
+                  </div>
+                  <div class="qty">
+                    <button type="button" class="btn btn-outline btn-square" data-qty-minus disabled aria-label="Diminuir"><svg class="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /></svg></button>
+                    <span class="qty-value" data-qty>1</span>
+                    <button type="button" class="btn btn-outline btn-square" data-qty-plus aria-label="Aumentar"><svg class="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg></button>
+                  </div>
+                  <div class="plan-actions">
+                    <button type="button" class="btn btn-primary btn-block" data-add><svg class="lucide lucide-shopping-cart mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1" /> <circle cx="19" cy="21" r="1" /> <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>Adicionar ao Carrinho</button>
+                    <a href="https://wa.me/553192980064?text=Olá! Gostaria de contratar o serviço de Desktop da Infolinx." class="btn-contract" target="_blank" rel="noopener noreferrer">Contratar Individual</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card plan-card animate-fade-in" style="animation-delay: 0.05s" data-id="2" data-name="Notebook" data-price="R$ 65,00">
+                <div class="plan-header">
+                  <div class="plan-icon-wrap"><svg class="lucide lucide-monitor plan-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2" /> <line x1="8" x2="16" y1="21" y2="21" /> <line x1="12" x2="12" y1="17" y2="21" /></svg></div>
+                  <h3 class="plan-name">Notebook</h3>
+                </div>
+                <div class="plan-content">
+                  <div>
+                    <span class="plan-price">R$ 65,00</span>
+                    <span class="plan-period">por mês</span>
+                  </div>
+                  <div class="plan-check">
+                    <svg class="lucide lucide-check plan-check-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+                    <span>Suporte completo incluído</span>
+                  </div>
+                  <div class="qty">
+                    <button type="button" class="btn btn-outline btn-square" data-qty-minus disabled aria-label="Diminuir"><svg class="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /></svg></button>
+                    <span class="qty-value" data-qty>1</span>
+                    <button type="button" class="btn btn-outline btn-square" data-qty-plus aria-label="Aumentar"><svg class="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg></button>
+                  </div>
+                  <div class="plan-actions">
+                    <button type="button" class="btn btn-primary btn-block" data-add><svg class="lucide lucide-shopping-cart mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1" /> <circle cx="19" cy="21" r="1" /> <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>Adicionar ao Carrinho</button>
+                    <a href="https://wa.me/553192980064?text=Olá! Gostaria de contratar o serviço de Notebook da Infolinx." class="btn-contract" target="_blank" rel="noopener noreferrer">Contratar Individual</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card plan-card animate-fade-in" style="animation-delay: 0.1s" data-id="3" data-name="Tablet" data-price="R$ 35,00">
+                <div class="plan-header">
+                  <div class="plan-icon-wrap"><svg class="lucide lucide-tablet plan-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="16" height="20" x="4" y="2" rx="2" ry="2" /> <line x1="12" x2="12.01" y1="18" y2="18" /></svg></div>
+                  <h3 class="plan-name">Tablet</h3>
+                </div>
+                <div class="plan-content">
+                  <div>
+                    <span class="plan-price">R$ 35,00</span>
+                    <span class="plan-period">por mês</span>
+                  </div>
+                  <div class="plan-check">
+                    <svg class="lucide lucide-check plan-check-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+                    <span>Suporte completo incluído</span>
+                  </div>
+                  <div class="qty">
+                    <button type="button" class="btn btn-outline btn-square" data-qty-minus disabled aria-label="Diminuir"><svg class="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /></svg></button>
+                    <span class="qty-value" data-qty>1</span>
+                    <button type="button" class="btn btn-outline btn-square" data-qty-plus aria-label="Aumentar"><svg class="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg></button>
+                  </div>
+                  <div class="plan-actions">
+                    <button type="button" class="btn btn-primary btn-block" data-add><svg class="lucide lucide-shopping-cart mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1" /> <circle cx="19" cy="21" r="1" /> <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>Adicionar ao Carrinho</button>
+                    <a href="https://wa.me/553192980064?text=Olá! Gostaria de contratar o serviço de Tablet da Infolinx." class="btn-contract" target="_blank" rel="noopener noreferrer">Contratar Individual</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card plan-card animate-fade-in" style="animation-delay: 0.15s" data-id="4" data-name="Servidores" data-price="R$ 355,00">
+                <div class="plan-header">
+                  <div class="plan-icon-wrap"><svg class="lucide lucide-server plan-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="8" x="2" y="2" rx="2" ry="2" /> <rect width="20" height="8" x="2" y="14" rx="2" ry="2" /> <line x1="6" x2="6.01" y1="6" y2="6" /> <line x1="6" x2="6.01" y1="18" y2="18" /></svg></div>
+                  <h3 class="plan-name">Servidores</h3>
+                </div>
+                <div class="plan-content">
+                  <div>
+                    <span class="plan-price">R$ 355,00</span>
+                    <span class="plan-period">por mês</span>
+                  </div>
+                  <div class="plan-check">
+                    <svg class="lucide lucide-check plan-check-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+                    <span>Suporte completo incluído</span>
+                  </div>
+                  <div class="qty">
+                    <button type="button" class="btn btn-outline btn-square" data-qty-minus disabled aria-label="Diminuir"><svg class="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /></svg></button>
+                    <span class="qty-value" data-qty>1</span>
+                    <button type="button" class="btn btn-outline btn-square" data-qty-plus aria-label="Aumentar"><svg class="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg></button>
+                  </div>
+                  <div class="plan-actions">
+                    <button type="button" class="btn btn-primary btn-block" data-add><svg class="lucide lucide-shopping-cart mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1" /> <circle cx="19" cy="21" r="1" /> <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>Adicionar ao Carrinho</button>
+                    <a href="https://wa.me/553192980064?text=Olá! Gostaria de contratar o serviço de Servidores da Infolinx." class="btn-contract" target="_blank" rel="noopener noreferrer">Contratar Individual</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card plan-card animate-fade-in" style="animation-delay: 0.2s" data-id="5" data-name="Roteadores" data-price="R$ 90,00">
+                <div class="plan-header">
+                  <div class="plan-icon-wrap"><svg class="lucide lucide-router plan-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="8" x="2" y="14" rx="2" /> <path d="M6.01 18H6" /> <path d="M10.01 18H10" /> <path d="M15 10v4" /> <path d="M17.84 7.17a4 4 0 0 0-5.66 0" /> <path d="M20.66 4.34a8 8 0 0 0-11.31 0" /></svg></div>
+                  <h3 class="plan-name">Roteadores</h3>
+                </div>
+                <div class="plan-content">
+                  <div>
+                    <span class="plan-price">R$ 90,00</span>
+                    <span class="plan-period">por mês</span>
+                  </div>
+                  <div class="plan-check">
+                    <svg class="lucide lucide-check plan-check-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+                    <span>Suporte completo incluído</span>
+                  </div>
+                  <div class="qty">
+                    <button type="button" class="btn btn-outline btn-square" data-qty-minus disabled aria-label="Diminuir"><svg class="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /></svg></button>
+                    <span class="qty-value" data-qty>1</span>
+                    <button type="button" class="btn btn-outline btn-square" data-qty-plus aria-label="Aumentar"><svg class="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg></button>
+                  </div>
+                  <div class="plan-actions">
+                    <button type="button" class="btn btn-primary btn-block" data-add><svg class="lucide lucide-shopping-cart mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1" /> <circle cx="19" cy="21" r="1" /> <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>Adicionar ao Carrinho</button>
+                    <a href="https://wa.me/553192980064?text=Olá! Gostaria de contratar o serviço de Roteadores da Infolinx." class="btn-contract" target="_blank" rel="noopener noreferrer">Contratar Individual</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card plan-card animate-fade-in" style="animation-delay: 0.25s" data-id="6" data-name="Switch Gerenciável" data-price="R$ 120,00">
+                <div class="plan-header">
+                  <div class="plan-icon-wrap"><svg class="lucide lucide-router plan-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="8" x="2" y="14" rx="2" /> <path d="M6.01 18H6" /> <path d="M10.01 18H10" /> <path d="M15 10v4" /> <path d="M17.84 7.17a4 4 0 0 0-5.66 0" /> <path d="M20.66 4.34a8 8 0 0 0-11.31 0" /></svg></div>
+                  <h3 class="plan-name">Switch Gerenciável</h3>
+                </div>
+                <div class="plan-content">
+                  <div>
+                    <span class="plan-price">R$ 120,00</span>
+                    <span class="plan-period">por mês</span>
+                  </div>
+                  <div class="plan-check">
+                    <svg class="lucide lucide-check plan-check-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+                    <span>Suporte completo incluído</span>
+                  </div>
+                  <div class="qty">
+                    <button type="button" class="btn btn-outline btn-square" data-qty-minus disabled aria-label="Diminuir"><svg class="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /></svg></button>
+                    <span class="qty-value" data-qty>1</span>
+                    <button type="button" class="btn btn-outline btn-square" data-qty-plus aria-label="Aumentar"><svg class="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg></button>
+                  </div>
+                  <div class="plan-actions">
+                    <button type="button" class="btn btn-primary btn-block" data-add><svg class="lucide lucide-shopping-cart mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1" /> <circle cx="19" cy="21" r="1" /> <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>Adicionar ao Carrinho</button>
+                    <a href="https://wa.me/553192980064?text=Olá! Gostaria de contratar o serviço de Switch Gerenciável da Infolinx." class="btn-contract" target="_blank" rel="noopener noreferrer">Contratar Individual</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card plan-card animate-fade-in" style="animation-delay: 0.3s" data-id="7" data-name="Switch Não Gerenciável" data-price="R$ 35,00">
+                <div class="plan-header">
+                  <div class="plan-icon-wrap"><svg class="lucide lucide-router plan-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="8" x="2" y="14" rx="2" /> <path d="M6.01 18H6" /> <path d="M10.01 18H10" /> <path d="M15 10v4" /> <path d="M17.84 7.17a4 4 0 0 0-5.66 0" /> <path d="M20.66 4.34a8 8 0 0 0-11.31 0" /></svg></div>
+                  <h3 class="plan-name">Switch Não Gerenciável</h3>
+                </div>
+                <div class="plan-content">
+                  <div>
+                    <span class="plan-price">R$ 35,00</span>
+                    <span class="plan-period">por mês</span>
+                  </div>
+                  <div class="plan-check">
+                    <svg class="lucide lucide-check plan-check-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+                    <span>Suporte completo incluído</span>
+                  </div>
+                  <div class="qty">
+                    <button type="button" class="btn btn-outline btn-square" data-qty-minus disabled aria-label="Diminuir"><svg class="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /></svg></button>
+                    <span class="qty-value" data-qty>1</span>
+                    <button type="button" class="btn btn-outline btn-square" data-qty-plus aria-label="Aumentar"><svg class="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg></button>
+                  </div>
+                  <div class="plan-actions">
+                    <button type="button" class="btn btn-primary btn-block" data-add><svg class="lucide lucide-shopping-cart mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1" /> <circle cx="19" cy="21" r="1" /> <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>Adicionar ao Carrinho</button>
+                    <a href="https://wa.me/553192980064?text=Olá! Gostaria de contratar o serviço de Switch Não Gerenciável da Infolinx." class="btn-contract" target="_blank" rel="noopener noreferrer">Contratar Individual</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card plan-card animate-fade-in" style="animation-delay: 0.35s" data-id="8" data-name="Access Point" data-price="R$ 35,00">
+                <div class="plan-header">
+                  <div class="plan-icon-wrap"><svg class="lucide lucide-router plan-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="8" x="2" y="14" rx="2" /> <path d="M6.01 18H6" /> <path d="M10.01 18H10" /> <path d="M15 10v4" /> <path d="M17.84 7.17a4 4 0 0 0-5.66 0" /> <path d="M20.66 4.34a8 8 0 0 0-11.31 0" /></svg></div>
+                  <h3 class="plan-name">Access Point</h3>
+                </div>
+                <div class="plan-content">
+                  <div>
+                    <span class="plan-price">R$ 35,00</span>
+                    <span class="plan-period">por mês</span>
+                  </div>
+                  <div class="plan-check">
+                    <svg class="lucide lucide-check plan-check-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+                    <span>Suporte completo incluído</span>
+                  </div>
+                  <div class="qty">
+                    <button type="button" class="btn btn-outline btn-square" data-qty-minus disabled aria-label="Diminuir"><svg class="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /></svg></button>
+                    <span class="qty-value" data-qty>1</span>
+                    <button type="button" class="btn btn-outline btn-square" data-qty-plus aria-label="Aumentar"><svg class="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg></button>
+                  </div>
+                  <div class="plan-actions">
+                    <button type="button" class="btn btn-primary btn-block" data-add><svg class="lucide lucide-shopping-cart mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1" /> <circle cx="19" cy="21" r="1" /> <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>Adicionar ao Carrinho</button>
+                    <a href="https://wa.me/553192980064?text=Olá! Gostaria de contratar o serviço de Access Point da Infolinx." class="btn-contract" target="_blank" rel="noopener noreferrer">Contratar Individual</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card plan-card animate-fade-in" style="animation-delay: 0.4s" data-id="9" data-name="DVR 8 canais (24h)" data-price="R$ 35,00">
+                <div class="plan-header">
+                  <div class="plan-icon-wrap"><svg class="lucide lucide-camera plan-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" /> <circle cx="12" cy="13" r="3" /></svg></div>
+                  <h3 class="plan-name">DVR 8 canais (24h)</h3>
+                </div>
+                <div class="plan-content">
+                  <div>
+                    <span class="plan-price">R$ 35,00</span>
+                    <span class="plan-period">por mês</span>
+                  </div>
+                  <div class="plan-check">
+                    <svg class="lucide lucide-check plan-check-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+                    <span>Suporte completo incluído</span>
+                  </div>
+                  <div class="qty">
+                    <button type="button" class="btn btn-outline btn-square" data-qty-minus disabled aria-label="Diminuir"><svg class="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /></svg></button>
+                    <span class="qty-value" data-qty>1</span>
+                    <button type="button" class="btn btn-outline btn-square" data-qty-plus aria-label="Aumentar"><svg class="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg></button>
+                  </div>
+                  <div class="plan-actions">
+                    <button type="button" class="btn btn-primary btn-block" data-add><svg class="lucide lucide-shopping-cart mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1" /> <circle cx="19" cy="21" r="1" /> <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>Adicionar ao Carrinho</button>
+                    <a href="https://wa.me/553192980064?text=Olá! Gostaria de contratar o serviço de DVR 8 canais (24h) da Infolinx." class="btn-contract" target="_blank" rel="noopener noreferrer">Contratar Individual</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card plan-card animate-fade-in" style="animation-delay: 0.45s" data-id="10" data-name="DVR 16 canais (24h)" data-price="R$ 55,00">
+                <div class="plan-header">
+                  <div class="plan-icon-wrap"><svg class="lucide lucide-camera plan-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" /> <circle cx="12" cy="13" r="3" /></svg></div>
+                  <h3 class="plan-name">DVR 16 canais (24h)</h3>
+                </div>
+                <div class="plan-content">
+                  <div>
+                    <span class="plan-price">R$ 55,00</span>
+                    <span class="plan-period">por mês</span>
+                  </div>
+                  <div class="plan-check">
+                    <svg class="lucide lucide-check plan-check-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+                    <span>Suporte completo incluído</span>
+                  </div>
+                  <div class="qty">
+                    <button type="button" class="btn btn-outline btn-square" data-qty-minus disabled aria-label="Diminuir"><svg class="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /></svg></button>
+                    <span class="qty-value" data-qty>1</span>
+                    <button type="button" class="btn btn-outline btn-square" data-qty-plus aria-label="Aumentar"><svg class="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg></button>
+                  </div>
+                  <div class="plan-actions">
+                    <button type="button" class="btn btn-primary btn-block" data-add><svg class="lucide lucide-shopping-cart mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1" /> <circle cx="19" cy="21" r="1" /> <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>Adicionar ao Carrinho</button>
+                    <a href="https://wa.me/553192980064?text=Olá! Gostaria de contratar o serviço de DVR 16 canais (24h) da Infolinx." class="btn-contract" target="_blank" rel="noopener noreferrer">Contratar Individual</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card plan-card animate-fade-in" style="animation-delay: 0.5s" data-id="11" data-name="Alarme (24h)" data-price="R$ 120,00">
+                <div class="plan-header">
+                  <div class="plan-icon-wrap"><svg class="lucide lucide-shield plan-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /></svg></div>
+                  <h3 class="plan-name">Alarme (24h)</h3>
+                </div>
+                <div class="plan-content">
+                  <div>
+                    <span class="plan-price">R$ 120,00</span>
+                    <span class="plan-period">por mês</span>
+                  </div>
+                  <div class="plan-check">
+                    <svg class="lucide lucide-check plan-check-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+                    <span>Suporte completo incluído</span>
+                  </div>
+                  <div class="qty">
+                    <button type="button" class="btn btn-outline btn-square" data-qty-minus disabled aria-label="Diminuir"><svg class="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /></svg></button>
+                    <span class="qty-value" data-qty>1</span>
+                    <button type="button" class="btn btn-outline btn-square" data-qty-plus aria-label="Aumentar"><svg class="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg></button>
+                  </div>
+                  <div class="plan-actions">
+                    <button type="button" class="btn btn-primary btn-block" data-add><svg class="lucide lucide-shopping-cart mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1" /> <circle cx="19" cy="21" r="1" /> <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>Adicionar ao Carrinho</button>
+                    <a href="https://wa.me/553192980064?text=Olá! Gostaria de contratar o serviço de Alarme (24h) da Infolinx." class="btn-contract" target="_blank" rel="noopener noreferrer">Contratar Individual</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card plan-card animate-fade-in" style="animation-delay: 0.55s" data-id="12" data-name="Impressoras" data-price="R$ 55,00">
+                <div class="plan-header">
+                  <div class="plan-icon-wrap"><svg class="lucide lucide-printer plan-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" /> <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6" /> <rect x="6" y="14" width="12" height="8" rx="1" /></svg></div>
+                  <h3 class="plan-name">Impressoras</h3>
+                </div>
+                <div class="plan-content">
+                  <div>
+                    <span class="plan-price">R$ 55,00</span>
+                    <span class="plan-period">por mês</span>
+                  </div>
+                  <div class="plan-check">
+                    <svg class="lucide lucide-check plan-check-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+                    <span>Suporte completo incluído</span>
+                  </div>
+                  <div class="qty">
+                    <button type="button" class="btn btn-outline btn-square" data-qty-minus disabled aria-label="Diminuir"><svg class="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /></svg></button>
+                    <span class="qty-value" data-qty>1</span>
+                    <button type="button" class="btn btn-outline btn-square" data-qty-plus aria-label="Aumentar"><svg class="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg></button>
+                  </div>
+                  <div class="plan-actions">
+                    <button type="button" class="btn btn-primary btn-block" data-add><svg class="lucide lucide-shopping-cart mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1" /> <circle cx="19" cy="21" r="1" /> <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>Adicionar ao Carrinho</button>
+                    <a href="https://wa.me/553192980064?text=Olá! Gostaria de contratar o serviço de Impressoras da Infolinx." class="btn-contract" target="_blank" rel="noopener noreferrer">Contratar Individual</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card plan-card animate-fade-in" style="animation-delay: 0.6s" data-id="13" data-name="Nobreaks" data-price="R$ 45,00">
+                <div class="plan-header">
+                  <div class="plan-icon-wrap"><svg class="lucide lucide-shield plan-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /></svg></div>
+                  <h3 class="plan-name">Nobreaks</h3>
+                </div>
+                <div class="plan-content">
+                  <div>
+                    <span class="plan-price">R$ 45,00</span>
+                    <span class="plan-period">por mês</span>
+                  </div>
+                  <div class="plan-check">
+                    <svg class="lucide lucide-check plan-check-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+                    <span>Suporte completo incluído</span>
+                  </div>
+                  <div class="plan-notice plan-notice-green">
+                    <p><strong>Incluso:</strong> Equipamento reserva incluído</p>
+                  </div>
+                  <div class="qty">
+                    <button type="button" class="btn btn-outline btn-square" data-qty-minus disabled aria-label="Diminuir"><svg class="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /></svg></button>
+                    <span class="qty-value" data-qty>1</span>
+                    <button type="button" class="btn btn-outline btn-square" data-qty-plus aria-label="Aumentar"><svg class="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg></button>
+                  </div>
+                  <div class="plan-actions">
+                    <button type="button" class="btn btn-primary btn-block" data-add><svg class="lucide lucide-shopping-cart mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1" /> <circle cx="19" cy="21" r="1" /> <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>Adicionar ao Carrinho</button>
+                    <a href="https://wa.me/553192980064?text=Olá! Gostaria de contratar o serviço de Nobreaks da Infolinx." class="btn-contract" target="_blank" rel="noopener noreferrer">Contratar Individual</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card plan-card animate-fade-in" style="animation-delay: 0.65s" data-id="14" data-name="Microsoft 365 Basic" data-price="R$ 8,50">
+                <div class="plan-header">
+                  <div class="plan-icon-wrap"><svg class="lucide lucide-cloud plan-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" /></svg></div>
+                  <h3 class="plan-name">Microsoft 365 Basic</h3>
+                </div>
+                <div class="plan-content">
+                  <div>
+                    <span class="plan-price">R$ 8,50</span>
+                    <span class="plan-period">aditivo por usuário/mês</span>
+                  </div>
+                  <div class="plan-check">
+                    <svg class="lucide lucide-check plan-check-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+                    <span>Suporte completo incluído</span>
+                  </div>
+                  <div class="plan-notice plan-notice-amber">
+                    <p><strong>Aviso:</strong> Este item não é a venda da licença Microsoft, é o serviço de apoio, gestão e evolução para os clientes que já tem a licenças.</p>
+                  </div>
+                  <div class="qty">
+                    <button type="button" class="btn btn-outline btn-square" data-qty-minus disabled aria-label="Diminuir"><svg class="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /></svg></button>
+                    <span class="qty-value" data-qty>1</span>
+                    <button type="button" class="btn btn-outline btn-square" data-qty-plus aria-label="Aumentar"><svg class="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg></button>
+                  </div>
+                  <div class="plan-actions">
+                    <button type="button" class="btn btn-primary btn-block" data-add><svg class="lucide lucide-shopping-cart mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1" /> <circle cx="19" cy="21" r="1" /> <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>Adicionar ao Carrinho</button>
+                    <a href="https://wa.me/553192980064?text=Olá! Gostaria de contratar o serviço de Microsoft 365 Basic da Infolinx." class="btn-contract" target="_blank" rel="noopener noreferrer">Contratar Individual</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card plan-card animate-fade-in" style="animation-delay: 0.7s" data-id="15" data-name="Microsoft 365 Standard" data-price="R$ 12,50">
+                <div class="plan-header">
+                  <div class="plan-icon-wrap"><svg class="lucide lucide-cloud plan-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" /></svg></div>
+                  <h3 class="plan-name">Microsoft 365 Standard</h3>
+                </div>
+                <div class="plan-content">
+                  <div>
+                    <span class="plan-price">R$ 12,50</span>
+                    <span class="plan-period">aditivo por usuário/mês</span>
+                  </div>
+                  <div class="plan-check">
+                    <svg class="lucide lucide-check plan-check-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+                    <span>Suporte completo incluído</span>
+                  </div>
+                  <div class="plan-notice plan-notice-amber">
+                    <p><strong>Aviso:</strong> Este item não é a venda da licença Microsoft, é o serviço de apoio, gestão e evolução para os clientes que já tem a licenças.</p>
+                  </div>
+                  <div class="qty">
+                    <button type="button" class="btn btn-outline btn-square" data-qty-minus disabled aria-label="Diminuir"><svg class="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /></svg></button>
+                    <span class="qty-value" data-qty>1</span>
+                    <button type="button" class="btn btn-outline btn-square" data-qty-plus aria-label="Aumentar"><svg class="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg></button>
+                  </div>
+                  <div class="plan-actions">
+                    <button type="button" class="btn btn-primary btn-block" data-add><svg class="lucide lucide-shopping-cart mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1" /> <circle cx="19" cy="21" r="1" /> <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>Adicionar ao Carrinho</button>
+                    <a href="https://wa.me/553192980064?text=Olá! Gostaria de contratar o serviço de Microsoft 365 Standard da Infolinx." class="btn-contract" target="_blank" rel="noopener noreferrer">Contratar Individual</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card plan-card animate-fade-in" style="animation-delay: 0.75s" data-id="16" data-name="Microsoft 365 Premium" data-price="R$ 19,50">
+                <div class="plan-header">
+                  <div class="plan-icon-wrap"><svg class="lucide lucide-cloud plan-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" /></svg></div>
+                  <h3 class="plan-name">Microsoft 365 Premium</h3>
+                </div>
+                <div class="plan-content">
+                  <div>
+                    <span class="plan-price">R$ 19,50</span>
+                    <span class="plan-period">aditivo por usuário/mês</span>
+                  </div>
+                  <div class="plan-check">
+                    <svg class="lucide lucide-check plan-check-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+                    <span>Suporte completo incluído</span>
+                  </div>
+                  <div class="plan-notice plan-notice-amber">
+                    <p><strong>Aviso:</strong> Este item não é a venda da licença Microsoft, é o serviço de apoio, gestão e evolução para os clientes que já tem a licenças.</p>
+                  </div>
+                  <div class="qty">
+                    <button type="button" class="btn btn-outline btn-square" data-qty-minus disabled aria-label="Diminuir"><svg class="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /></svg></button>
+                    <span class="qty-value" data-qty>1</span>
+                    <button type="button" class="btn btn-outline btn-square" data-qty-plus aria-label="Aumentar"><svg class="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg></button>
+                  </div>
+                  <div class="plan-actions">
+                    <button type="button" class="btn btn-primary btn-block" data-add><svg class="lucide lucide-shopping-cart mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1" /> <circle cx="19" cy="21" r="1" /> <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>Adicionar ao Carrinho</button>
+                    <a href="https://wa.me/553192980064?text=Olá! Gostaria de contratar o serviço de Microsoft 365 Premium da Infolinx." class="btn-contract" target="_blank" rel="noopener noreferrer">Contratar Individual</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card plan-card animate-fade-in" style="animation-delay: 0.8s" data-id="17" data-name="Microsoft 365 E1" data-price="R$ 12,50">
+                <div class="plan-header">
+                  <div class="plan-icon-wrap"><svg class="lucide lucide-cloud plan-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" /></svg></div>
+                  <h3 class="plan-name">Microsoft 365 E1</h3>
+                </div>
+                <div class="plan-content">
+                  <div>
+                    <span class="plan-price">R$ 12,50</span>
+                    <span class="plan-period">aditivo por usuário/mês</span>
+                  </div>
+                  <div class="plan-check">
+                    <svg class="lucide lucide-check plan-check-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+                    <span>Suporte completo incluído</span>
+                  </div>
+                  <div class="plan-notice plan-notice-amber">
+                    <p><strong>Aviso:</strong> Este item não é a venda da licença Microsoft, é o serviço de apoio, gestão e evolução para os clientes que já tem a licenças.</p>
+                  </div>
+                  <div class="qty">
+                    <button type="button" class="btn btn-outline btn-square" data-qty-minus disabled aria-label="Diminuir"><svg class="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /></svg></button>
+                    <span class="qty-value" data-qty>1</span>
+                    <button type="button" class="btn btn-outline btn-square" data-qty-plus aria-label="Aumentar"><svg class="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg></button>
+                  </div>
+                  <div class="plan-actions">
+                    <button type="button" class="btn btn-primary btn-block" data-add><svg class="lucide lucide-shopping-cart mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1" /> <circle cx="19" cy="21" r="1" /> <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>Adicionar ao Carrinho</button>
+                    <a href="https://wa.me/553192980064?text=Olá! Gostaria de contratar o serviço de Microsoft 365 E1 da Infolinx." class="btn-contract" target="_blank" rel="noopener noreferrer">Contratar Individual</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card plan-card animate-fade-in" style="animation-delay: 0.85s" data-id="18" data-name="Microsoft 365 E5" data-price="R$ 22,50">
+                <div class="plan-header">
+                  <div class="plan-icon-wrap"><svg class="lucide lucide-cloud plan-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" /></svg></div>
+                  <h3 class="plan-name">Microsoft 365 E5</h3>
+                </div>
+                <div class="plan-content">
+                  <div>
+                    <span class="plan-price">R$ 22,50</span>
+                    <span class="plan-period">aditivo por usuário/mês</span>
+                  </div>
+                  <div class="plan-check">
+                    <svg class="lucide lucide-check plan-check-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+                    <span>Suporte completo incluído</span>
+                  </div>
+                  <div class="plan-notice plan-notice-amber">
+                    <p><strong>Aviso:</strong> Este item não é a venda da licença Microsoft, é o serviço de apoio, gestão e evolução para os clientes que já tem a licenças.</p>
+                  </div>
+                  <div class="qty">
+                    <button type="button" class="btn btn-outline btn-square" data-qty-minus disabled aria-label="Diminuir"><svg class="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /></svg></button>
+                    <span class="qty-value" data-qty>1</span>
+                    <button type="button" class="btn btn-outline btn-square" data-qty-plus aria-label="Aumentar"><svg class="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg></button>
+                  </div>
+                  <div class="plan-actions">
+                    <button type="button" class="btn btn-primary btn-block" data-add><svg class="lucide lucide-shopping-cart mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1" /> <circle cx="19" cy="21" r="1" /> <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>Adicionar ao Carrinho</button>
+                    <a href="https://wa.me/553192980064?text=Olá! Gostaria de contratar o serviço de Microsoft 365 E5 da Infolinx." class="btn-contract" target="_blank" rel="noopener noreferrer">Contratar Individual</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="plans-info-wrap animate-fade-in" style="animation-delay: 0.9s">
+              <div class="plans-info">
+                <h3>Como funciona nossa prestação de serviços?</h3>
+                <p class="plans-info-text">
+                  A precificação é medida pelo quantitativo individual de cada item do seu parque tecnológico.
+                  Oferecemos contratos anuais com suporte completo, manutenção preventiva e corretiva.
+                </p>
+                <p class="plans-info-highlight">
+                  Entre em contato para uma análise personalizada das suas necessidades!
+                </p>
+              </div>
+            </div>
+
+            <div class="plans-info-wrap animate-fade-in" style="animation-delay: 1s">
+              <div class="cta-box cta-box-lg">
+                <h3 class="cta-title-lg">Precisa de um orçamento personalizado?</h3>
+                <p class="cta-text-lg">
+                  Entre em contato conosco para receber uma proposta customizada
+                  para as necessidades específicas da sua empresa.
+                </p>
+                <a href="https://wa.me/553192980064?text=Olá! Gostaria de receber um orçamento personalizado dos serviços da Infolinx." class="btn-cta btn-cta-lg" target="_blank" rel="noopener noreferrer">
+                  Solicitar Orçamento
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cart Drawer -->
+          <div class="cart-backdrop" id="cartBackdrop" hidden></div>
+          <aside class="cart-drawer" id="cartDrawer" hidden>
+            <div class="cart-drawer-inner">
+              <div class="cart-head">
+                <h2 class="cart-title">
+                  <svg class="lucide lucide-shopping-cart cart-title-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1" /> <circle cx="19" cy="21" r="1" /> <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>
+                  Carrinho (<span id="cartCount">0</span>)
+                </h2>
+                <button class="btn btn-ghost btn-sm" type="button" id="cartClose" aria-label="Fechar carrinho">
+                  <svg class="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /> <path d="m6 6 12 12" /></svg>
+                </button>
+              </div>
+
+              <div class="cart-body" id="cartBody"></div>
+
+              <div class="cart-foot" id="cartFoot" hidden>
+                <button class="btn btn-outline btn-block" type="button" id="cartClear">Limpar Carrinho</button>
+                <button class="btn btn-whatsapp btn-block" type="button" id="cartSend">
+                  <svg class="lucide lucide-shopping-cart mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1" /> <circle cx="19" cy="21" r="1" /> <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>
+                  Enviar Pedido no WhatsApp
+                </button>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <!-- Partners -->
+        <section class="partners">
+          <div class="container container-4">
+            <div class="partners-header">
+              <h2 class="partners-title"> Principais Parceiros</h2>
+              <p class="partners-subtitle">
+                Trabalhamos com as melhores marcas do mercado para oferecer soluções de excelência
+              </p>
+            </div>
+
+            <div class="partners-wrap">
+              <div class="carousel" id="partnersCarousel">
+                <div class="carousel-viewport">
+                  <div class="carousel-track">
+                    <div class="carousel-item partner-item">
+                      <div class="partner-box">
+                        <a href="https://www.kaspersky.com.br/lp/special-offer?reseller=br_b2c-eg-lf_acq_ona_sem_bra_onl_b2c_google_ppc-ad_______&amp;utm_content=ppc-ad|generic&amp;utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=DM_B2C_LATAM_BR_PPC_Google_LF_PT-BR_B_KWD_EXA_Brand_Pure&amp;gad_source=1&amp;gad_campaignid=21904674676&amp;gbraid=0AAAAA-fVjSHtUhy3wQU8nt334Lfk_rJVQ&amp;gclid=Cj0KCQjww4TGBhCKARIsAFLXndQ381n11kpC0YxbboMO9Gc7-e6kc_jNM68NqKumzBtGxhyr_RzZUjsaAuXUEALw_wcB" target="_blank" rel="noopener noreferrer" class="partner-link">
+                          <img src="lovable-uploads/6771fecd-d0ae-4f1b-ab62-68a9296eacbe.png" alt="Logo Kaspersky" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="carousel-item partner-item">
+                      <div class="partner-box">
+                        <a href="https://www.coreldraw.com/br/product/coreldraw/?x-vehicle=ppc_brkws&amp;utm_medium=cpc&amp;utm_source=google&amp;utm_term=coreldraw&amp;utm_content=&amp;utm_id=11287101014&amp;extensionid=&amp;matchtype=e&amp;device=c&amp;devicemodel=&amp;creative=766780006963&amp;network=g&amp;placement=&amp;campaignid=11287101014&amp;x-source=ppc&amp;x-target=ppc&amp;promo=ppc&amp;campaign_name=CDGS-Search-Brand-Evergreen-BR-PT&amp;gad_source=1&amp;gad_campaignid=11287101014&amp;gbraid=0AAAAADew63QuHlsYN8W8AHfLFhASJ3YxK&amp;gclid=Cj0KCQjww4TGBhCKARIsAFLXndTbH8U3UwlT_elNK9Jo1Le7btrHrIqiEwZa1ABrlWkG_fmBpn1uxJEaAq4pEALw_wcB" target="_blank" rel="noopener noreferrer" class="partner-link">
+                          <img src="lovable-uploads/fc7bc7ae-f0df-4b49-905a-2daeb4a9ab12.png" alt="Logo CorelDRAW" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="carousel-item partner-item">
+                      <div class="partner-box">
+                        <a href="https://www.autodesk.com/br/products?mktvar002=5656927|SEM|22402362435|176248868543|kwd-12548870&amp;utm_source=GGL&amp;utm_medium=SEM&amp;utm_campaign=GGL_DEC_Autodesk_AMER_BR_eComm_SEM_BR_New_EX_0000_5656927_&amp;utm_id=5656927&amp;utm_term=kwd-12548870&amp;mkwid=sUan9O2ac|pcrid|743928744624|pkw|autodesk|pmt|e|pdv|c|slid||pgrid|176248868543|ptaid|kwd-12548870|pid|&amp;utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GGL_ESTORE_AUTODESK_BZ_POR_BR_SEM_EXACT&amp;utm_term=autodesk&amp;utm_content=sUan9O2ac|pcrid|743928744624|pkw|autodesk|pmt|e|pdv|c|slid||pgrid|176248868543|ptaid|kwd-12548870|&amp;gad_source=1&amp;gad_campaignid=22402362435&amp;gbraid=0AAAAADx7pE1CoCEpHd5PI1pPycQTusfTV&amp;gclid=Cj0KCQjww4TGBhCKARIsAFLXndQ1Vz8jN3G2nxOdKgQyKG-khxKrL0soNZfj0BxMLqt-n5DicVTFApQaAisVEALw_wcB" target="_blank" rel="noopener noreferrer" class="partner-link">
+                          <img src="lovable-uploads/68044089-2ae5-4b03-accb-692e532c17bc.png" alt="Logo Autodesk" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="carousel-item partner-item">
+                      <div class="partner-box">
+                        <a href="https://www.lenovo.com/br/pt/d/promocoes/?orgRef=https%253A%252F%252Fwww.google.com%252F&amp;visibleDatas=11279%3AThinkPad&amp;cid=br:sem|se|google|j-b2c-commercial-convers-google-search-intelccf|search|commercial&amp;gad_source=1&amp;gad_campaignid=10067044248&amp;gbraid=0AAAAADtpWiAah8g8E8I9SQlXEHf2L2X43&amp;gclid=Cj0KCQjww4TGBhCKARIsAFLXndR6oLLcHm9Fgg_UgPpPFAZnuNt96IzwCp6FsDcYugBByr5gC4gJO10aAtkgEALw_wcB" target="_blank" rel="noopener noreferrer" class="partner-link">
+                          <img src="lovable-uploads/8c789511-0e23-45d1-8add-733ffbb61f20.png" alt="Logo Lenovo" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="carousel-item partner-item">
+                      <div class="partner-box">
+                        <a href="https://www.microsoft.com/pt-br" target="_blank" rel="noopener noreferrer" class="partner-link">
+                          <img src="lovable-uploads/31c12c38-94bf-4372-acce-9e053fd731e9.png" alt="Logo Microsoft" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="carousel-item partner-item">
+                      <div class="partner-box">
+                        <a href="https://www.adobe.com/br/creativecloud/campaign/pricing.html?sdid=2NVQC2QJ&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=Cj0KCQjww4TGBhCKARIsAFLXndTjBWIAJxJ2VJSyvNzBhHvGjSKJfqpey4jbNB_SAjITu8c1S3q4RPMaAhlIEALw_wcB:G:s&amp;s_kwcid=AL!3085!3!459896307784!e!!g!!adobe!188193342!10039593102&amp;gad_source=1&amp;gad_campaignid=188193342&amp;gbraid=0AAAAADxybVowlcBNOU1nOjAy8MDkzVTeV&amp;gclid=Cj0KCQjww4TGBhCKARIsAFLXndTjBWIAJxJ2VJSyvNzBhHvGjSKJfqpey4jbNB_SAjITu8c1S3q4RPMaAhlIEALw_wcB" target="_blank" rel="noopener noreferrer" class="partner-link">
+                          <img src="lovable-uploads/ecb9bee8-7fe3-4c64-b202-b6327e60e84b.png" alt="Logo Adobe" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="carousel-item partner-item">
+                      <div class="partner-box">
+                        <a href="https://loja.intelbras.com.br/?gad_source=1&amp;gad_campaignid=10905497741&amp;gbraid=0AAAAACdR-oqw408GiR9NJrFk0knI7p-sJ&amp;gclid=Cj0KCQjww4TGBhCKARIsAFLXndTMcRuICtovAuw7hcjDDN-jEPw-EqmLlLtAfzI3kb80sUEKYckfTpEaAqnrEALw_wcB" target="_blank" rel="noopener noreferrer" class="partner-link">
+                          <img src="lovable-uploads/becfd665-febf-44df-9cb3-33923b08b1dc.png" alt="Logo Intelbras" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="carousel-item partner-item">
+                      <div class="partner-box">
+                        <a href="https://www.lenovo.com/br/pt/d/promocoes/?orgRef=https%253A%252F%252Fwww.google.com%252F&amp;visibleDatas=11279%3AThinkPad&amp;cid=br:sem|se|google|j-b2c-commercial-convers-google-search-intelccf|search|commercial&amp;gad_source=1&amp;gad_campaignid=10067044248&amp;gbraid=0AAAAADtpWiA_lwVEM3lF5jKuwcCFmQJ5J&amp;gclid=Cj0KCQjwuKnGBhD5ARIsAD19RsaGiy9wnsRIgPm42WohkhEMTs2zPp1HtRISRcskR0S2jhngtRzfw_caAid5EALw_wcB" target="_blank" rel="noopener noreferrer" class="partner-link">
+                          <img src="lovable-uploads/thinkpad-logo.png" alt="Logo ThinkPad" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="carousel-item partner-item">
+                      <div class="partner-box">
+                        <a href="https://www.lenovo.com/br/pt/c/workstations/thinkstation/thinkstation-p/?orgRef=https%253A%252F%252Fwww.google.com%252F&amp;srsltid=AfmBOopSxXWjlz0rRuwU7tS1hUFprIH5iqep-mq7vGEdc_XbCWHH9Isw" target="_blank" rel="noopener noreferrer" class="partner-link">
+                          <img src="lovable-uploads/thinkstation-logo.svg" alt="Logo ThinkStation" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="carousel-item partner-item">
+                      <div class="partner-box">
+                        <a href="https://lenovo.com/br/pt/d/promocoes/servidores/?&amp;cid=br:sem|se|google|b2c-isg-convers-google-search-intelccf|search|isg&amp;gad_source=1&amp;gad_campaignid=22788905940&amp;gbraid=0AAAAADtpWiDkGN1KOuP8-J1SXRZFvhHTe&amp;gclid=Cj0KCQjwuKnGBhD5ARIsAD19RsYu3O1QqlJ4DMiYUbtkbMGaKVWpW04_Ld_dMVP6_yJCQUZ5QN7ZptkaArfdEALw_wcB" target="_blank" rel="noopener noreferrer" class="partner-link">
+                          <img src="lovable-uploads/thinksystem-logo.png" alt="Logo ThinkSystem" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contato" class="section section-bg">
+          <div class="container container-r">
+            <div class="section-header animate-fade-in">
+              <h2 class="section-title title-md">Entre em Contato</h2>
+              <p class="section-subtitle">
+                Estamos prontos para atender sua empresa e fornecer as melhores soluções em tecnologia.
+                Fale conosco agora mesmo!
+              </p>
+            </div>
+
+            <div class="contact-grid">
+              <div class="contact-info animate-slide-in">
+                <div>
+                  <h3 class="contact-heading">Informações de Contato</h3>
+                  <div class="contact-list">
+                    <div class="card card-service">
+                      <div class="card-content-r">
+                        <div class="icon-row">
+                          <svg class="lucide lucide-phone contact-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+                          <div>
+                            <h4 class="contact-label">Telefone</h4>
+                            <a href="tel:+553192980064" class="contact-value">(31) 92980064</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card card-service">
+                      <div class="card-content-r">
+                        <div class="icon-row">
+                          <svg class="lucide lucide-mail contact-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2" /> <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
+                          <div>
+                            <h4 class="contact-label">E-mail</h4>
+                            <a href="mailto:atendimento@infolinx.com.br" class="contact-value break-all">atendimento@infolinx.com.br</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card card-service">
+                      <div class="card-content-r">
+                        <div class="icon-row">
+                          <svg class="lucide lucide-clock contact-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <polyline points="12 6 12 12 16 14" /></svg>
+                          <div>
+                            <h4 class="contact-label">Horário de Funcionamento</h4>
+                            <p class="contact-value">Segunda a Sexta: 08:30 às 18:00</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="animate-fade-in" style="animation-delay: 0.3s">
+                <div class="contact-cta">
+                  <div class="contact-cta-inner">
+                    <img src="lovable-uploads/d92d3c24-3b57-4af8-9577-4fa6a5f495d2.png" alt="WhatsApp" class="contact-cta-logo" />
+                    <h3 class="contact-cta-title">Vamos Conversar?</h3>
+                    <p class="contact-cta-text">
+                      Nossa equipe está pronta para entender suas necessidades e
+                      apresentar a melhor solução para sua empresa.
+                    </p>
+
+                    <div class="contact-cta-buttons">
+                      <a href="https://wa.me/553192980064?text=Olá! Gostaria de conhecer mais sobre os serviços da Infolinx." class="contact-btn contact-btn-wa group" target="_blank" rel="noopener noreferrer">
+                        <img src="lovable-uploads/d92d3c24-3b57-4af8-9577-4fa6a5f495d2.png" alt="WhatsApp" class="contact-btn-icon" />
+                        Falar no WhatsApp
+                      </a>
+
+                      <a href="mailto:atendimento@infolinx.com.br" class="contact-btn contact-btn-mail group">
+                        <svg class="lucide lucide-mail contact-btn-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2" /> <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
+                        Enviar E-mail
+                      </a>
+                    </div>
+
+                    <div class="contact-cta-divider"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container container-r">
+          <div class="footer-grid">
+            <div class="footer-col footer-col-wide">
+              <img src="lovable-uploads/dd8a0701-ac38-461c-a2e2-e71a00f3ee46.png" alt="Infolinx Logo" class="footer-logo" />
+              <p class="footer-about">
+                Aperfeiçoar com Tecnologia. Somos especialistas em suporte, manutenção
+                e gerenciamento de ativos de tecnologia para empresas.
+              </p>
+              <div>
+                <p class="footer-cnpj"><strong>CNPJ:</strong> 17.238.598/0001-54</p>
+              </div>
+            </div>
+
+            <div class="footer-col">
+              <h3 class="footer-heading">Links Rápidos</h3>
+              <nav class="footer-links">
+                <a href="#inicio" data-scroll>Início</a>
+                <a href="#sobre" data-scroll>Sobre</a>
+                <a href="#servicos" data-scroll>Serviços</a>
+                <a href="#planos" data-scroll>Planos</a>
+                <a href="#contato" data-scroll>Contato</a>
+              </nav>
+            </div>
+
+            <div class="footer-col footer-col-wide">
+              <h3 class="footer-heading">Contato</h3>
+              <div class="footer-contacts">
+                <div class="footer-contact">
+                  <svg class="lucide lucide-phone footer-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+                  <a href="tel:+553192980064">(31) 92980064</a>
+                </div>
+                <div class="footer-contact">
+                  <svg class="lucide lucide-mail footer-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2" /> <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
+                  <a href="mailto:atendimento@infolinx.com.br" class="break-all">atendimento@infolinx.com.br</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p>© <span id="year">2026</span> Infolinx Serviços e Suprimentos LTDA. Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </footer>
+
+      <!-- WhatsApp Button -->
+      <a href="https://wa.me/553192980064?text=Olá! Gostaria de conhecer mais sobre os serviços da Infolinx." class="whatsapp-float group" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
+        <img src="lovable-uploads/d92d3c24-3b57-4af8-9577-4fa6a5f495d2.png" alt="WhatsApp" />
+      </a>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox-overlay" id="lightboxOverlay" hidden></div>
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" tabindex="-1" hidden>
+      <div class="lightbox-inner">
+        <button class="lightbox-btn lightbox-close" type="button" id="lightboxClose" aria-label="Fechar">
+          <svg class="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /> <path d="m6 6 12 12" /></svg>
+        </button>
+        <button class="lightbox-btn lightbox-prev" type="button" id="lightboxPrev" aria-label="Anterior">
+          <svg class="lucide lucide-chevron-left" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
+        </button>
+        <div class="lightbox-stage">
+          <img src="" alt="" id="lightboxImg" />
+          <h3 id="lightboxTitle"></h3>
+        </div>
+        <button class="lightbox-btn lightbox-next" type="button" id="lightboxNext" aria-label="Próxima">
+          <svg class="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+        </button>
+        <div class="lightbox-counter" id="lightboxCounter">1 / 10</div>
+      </div>
+    </div>
+
     <!-- Rodapé MonteSite - Atualização Automática -->
     <div id="montesite-footer-badge"></div>
     <script src="https://vaabpicspdbolvutnscp.supabase.co/functions/v1/get-footer-iframe"></script>
-    
-    <script type="module" src="/src/main.tsx"></script>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
